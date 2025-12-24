@@ -1,0 +1,29 @@
+# Python bytecode (compiled files)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment (Very important to ignore)
+venv/
+.venv/
+env/
+ENV/
+
+# Database files
+# Note: Keep your .db files out of Git if they are large or private.
+# In a demo, you can include the .db file OR tell the buyer to run init_db.py.
+data/*.db
+data/*.sqlite3
+
+# Environment variables & secrets
+.env
+.envrc
+
+# IDE / Editor folders
+.vscode/
+.idea/
+.DS_Store
+
+# Log files
+*.log
+pip-log.txt
