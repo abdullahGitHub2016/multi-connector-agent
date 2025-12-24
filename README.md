@@ -34,16 +34,19 @@ multi-connector-agent/
 └── requirements.txt        # Project dependencies
 
 
-⚙️ Installation & Setup1. PrerequisitesInstall Ollama.Download the model: ollama pull qwen2.5:0.5b-instruct2. Install DependenciesBashpip install langchain langchain-ollama sqlalchemy
+## ⚙️ Installation & Setup1.
+PrerequisitesInstall Ollama.Download the model: ollama pull qwen2.5:0.5b-instruct2. Install DependenciesBashpip install langchain langchain-ollama sqlalchemy
 3. Initialize the DatabaseThis creates a sample company with 100 employees and 1,000 linked sales records.Bashpython init_db.py
 4. Launch the AgentBashpython -m src.agent
 
 
-💡 Example Queries to DemoCategoryExample QuestionSimple Data"How many employees work in the Marketing department?"Financials"What is the total payroll for the Software department?"Complex Joins"Who is the top-performing employee by total sales revenue?"Business Logic"Find the department with the highest average salary."🛡️ Defensive FeaturesThis agent includes a Custom SQL Scrubber in tools_setup.py. It automatically detects and fixes formatting errors or "hallucinated" syntax before it hits your database, ensuring the system remains stable even under complex queries.
+##💡 Example Queries to DemoCategoryExample
+QuestionSimple Data"How many employees work in the Marketing department?"Financials"What is the total payroll for the Software department?"Complex Joins"Who is the top-performing employee by total sales revenue?"Business Logic"Find the department with the highest average salary."🛡️ Defensive FeaturesThis agent includes a Custom SQL Scrubber in tools_setup.py. It automatically detects and fixes formatting errors or "hallucinated" syntax before it hits your database, ensuring the system remains stable even under complex queries.
 
 ---
 
 ### 🎨 Why this README helps you sell
+
 1.  **Table of Examples:** Buyers love seeing exactly what they can ask.
 2.  **Tech Stack:** It shows you are using modern, industry-standard tools (LangChain, Ollama).
 3.  **Privacy Focus:** In 2024/2025, data privacy is the #1 concern for companies using AI. Highlighting "Local Sovereignty" makes your project 10x more valuable.
